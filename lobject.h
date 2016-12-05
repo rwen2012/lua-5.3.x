@@ -30,9 +30,9 @@
 
 /*
 ** tags for Tagged Values have the following use of bits:
-** bits 0-3: actual tag (a LUA_T* value)
-** bits 4-5: variant bits
-** bit 6: whether value is collectable
+** bits 0-3: actual tag (a LUA_T* value) ： 对外数据类型
+** bits 4-5: variant bits ：内部细分，用于长短字符串，整型和浮点型数值，闭包等细分
+** bit 6: whether value is collectable ：用于表示是否为可回收的类型
 */
 
 
